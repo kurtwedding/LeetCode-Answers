@@ -21,38 +21,6 @@ class ListNode {
  * @return {ListNode}
  */
 
-/* var removeNodes = function(head) {
-    var headArray = Array();
-    headArray.push(head.val)
-    while(head.next != null){
-        headArray.push(head.next.val)
-        head = head.next
-    }
-
-    // Created an array of the values
-    // Test if the left values are less
-    var indexToRemove = Array()
-    for(var i = headArray.length-1; i >= 0; i--){
-        for(var j = i-1; j >= 0; j--){
-            if(headArray[j] < headArray[i]) {
-                indexToRemove.push(j)
-                continue
-            } break
-        }
-    }
-
-    for(let i in indexToRemove){
-        headArray.splice(indexToRemove[i], 1)
-    }
-
-    var curr = null
-    for (var i = headArray.length-1; i >= 0; i--){
-        curr = new ListNode(headArray[i], curr)
-    }
-
-    return curr
-} */
-
 var removeNodes = function(head) {
     // convert the LinkedList to an array of int values
     var headArray = Array();
